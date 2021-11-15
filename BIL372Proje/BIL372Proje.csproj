@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37E3F0B2-FF11-4308-9A44-5AB301C72F64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BIL372Proje</RootNamespace>
+    <AssemblyName>BIL372Proje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AESEncrypt.cs" />
+    <Compile Include="Aktivite.cs" />
+    <Compile Include="AktiviteEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AktiviteEklemeSayfasi.Designer.cs">
+      <DependentUpon>AktiviteEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alan.cs" />
+    <Compile Include="AlanEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlanEklemeSayfasi.Designer.cs">
+      <DependentUpon>AlanEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Belirtec.cs" />
+    <Compile Include="BelirtecEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BelirtecEklemeSayfasi.Designer.cs">
+      <DependentUpon>BelirtecEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Birim.cs" />
+    <Compile Include="BirimEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BirimEklemeSayfasi.Designer.cs">
+      <DependentUpon>BirimEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cikti.cs" />
+    <Compile Include="CiktiDetay.cs" />
+    <Compile Include="CiktiDetayEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CiktiDetayEklemeSayfasi.Designer.cs">
+      <DependentUpon>CiktiDetayEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CiktiEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CiktiEklemeSayfasi.Designer.cs">
+      <DependentUpon>CiktiEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Il.cs" />
+    <Compile Include="Ilce.cs" />
+    <Compile Include="IlceEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IlceEklemeSayfasi.Designer.cs">
+      <DependentUpon>IlceEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IlEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IlEklemeSayfasi.Designer.cs">
+      <DependentUpon>IlEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEklemeSayfasi.Designer.cs">
+      <DependentUpon>KullaniciEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanicilar.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mudahele.cs" />
+    <Compile Include="MudaheleDetay.cs" />
+    <Compile Include="MudaheleDetayEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MudaheleDetayEklemeSayfasi.Designer.cs">
+      <DependentUpon>MudaheleDetayEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MudaheleEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MudaheleEklemeSayfasi.Designer.cs">
+      <DependentUpon>MudaheleEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs" />
+    <Compile Include="PersonelEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelEklemeSayfasi.Designer.cs">
+      <DependentUpon>PersonelEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Problem.cs" />
+    <Compile Include="ProblemBirim.cs" />
+    <Compile Include="ProblemBirimEkleSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblemBirimEkleSayfasi.Designer.cs">
+      <DependentUpon>ProblemBirimEkleSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblemEklemeSayfasi.Designer.cs">
+      <DependentUpon>ProblemEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemEnterPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblemEnterPage.Designer.cs">
+      <DependentUpon>ProblemEnterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sinif.cs" />
+    <Compile Include="SinifEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinifEklemeSayfasi.Designer.cs">
+      <DependentUpon>SinifEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AktiviteEklemeSayfasi.resx">
+      <DependentUpon>AktiviteEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlanEklemeSayfasi.resx">
+      <DependentUpon>AlanEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BelirtecEklemeSayfasi.resx">
+      <DependentUpon>BelirtecEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BirimEklemeSayfasi.resx">
+      <DependentUpon>BirimEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CiktiDetayEklemeSayfasi.resx">
+      <DependentUpon>CiktiDetayEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CiktiEklemeSayfasi.resx">
+      <DependentUpon>CiktiEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IlceEklemeSayfasi.resx">
+      <DependentUpon>IlceEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IlEklemeSayfasi.resx">
+      <DependentUpon>IlEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEklemeSayfasi.resx">
+      <DependentUpon>KullaniciEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MudaheleDetayEklemeSayfasi.resx">
+      <DependentUpon>MudaheleDetayEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MudaheleEklemeSayfasi.resx">
+      <DependentUpon>MudaheleEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelEklemeSayfasi.resx">
+      <DependentUpon>PersonelEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemBirimEkleSayfasi.resx">
+      <DependentUpon>ProblemBirimEkleSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemEklemeSayfasi.resx">
+      <DependentUpon>ProblemEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemEnterPage.resx">
+      <DependentUpon>ProblemEnterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SinifEklemeSayfasi.resx">
+      <DependentUpon>SinifEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
