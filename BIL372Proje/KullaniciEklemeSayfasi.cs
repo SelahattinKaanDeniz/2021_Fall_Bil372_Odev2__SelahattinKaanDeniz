@@ -50,8 +50,8 @@ namespace BIL372Proje
                     {
 
                         string sql = "INSERT INTO Kullanicilar (KullaniciAdi, Sifre) Values (@kullaniciadi, @sifre);";
-
-                        Kullanicilar kullanici = new Kullanicilar { kullaniciadi = kullaniciAdiText.Text, sifre = sifreText.Text };
+                        String Password = AESEncrypt.Encrypt(sifreText.Text);
+                        Kullanicilar kullanici = new Kullanicilar { kullaniciadi = kullaniciAdiText.Text, sifre = Password };
                         connection.Execute(sql, kullanici);
 
                         this.Hide();

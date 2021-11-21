@@ -48,9 +48,17 @@ namespace BIL372Proje
                             }
                             else
                             {
-                                this.Hide();
-                                ProblemEnterPage f1 = new ProblemEnterPage(); //this is the change, code for redirect  
-                                f1.ShowDialog();
+                                var managerList = connection.Query<String>($"select BirimMudurKullaniciAdi from Birimler ").ToList();
+                                if (managerList.Contains(LoginKullanıciAdiText.Text)){
+                                    this.Hide();
+                                    MudurPage f1 = new MudurPage(); //this is the change, code for redirect  
+                                    f1.ShowDialog();
+                                }
+                                else {
+                                    this.Hide();
+                                    ProblemEnterPage f1 = new ProblemEnterPage(); //this is the change, code for redirect  
+                                    f1.ShowDialog();
+                                }
                             }
                         }
                         else if(output.Count > 1)

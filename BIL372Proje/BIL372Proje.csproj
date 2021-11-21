@@ -85,6 +85,13 @@
     <Compile Include="BirimEklemeSayfasi.Designer.cs">
       <DependentUpon>BirimEklemeSayfasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalisanProblem.cs" />
+    <Compile Include="CalisanProblemSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalisanProblemSayfasi.Designer.cs">
+      <DependentUpon>CalisanProblemSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cikti.cs" />
     <Compile Include="CiktiDetay.cs" />
     <Compile Include="CiktiDetayEklemeSayfasi.cs">
@@ -108,6 +115,20 @@
     </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="Il.cs" />
+    <Compile Include="IlaveCiktiDetay.cs" />
+    <Compile Include="IlaveCiktiDetayEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IlaveCiktiDetayEklemeSayfasi.Designer.cs">
+      <DependentUpon>IlaveCiktiDetayEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IlaveMudaheleDetay.cs" />
+    <Compile Include="IlaveMudaheleDetayEkleSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IlaveMudaheleDetayEkleSayfasi.Designer.cs">
+      <DependentUpon>IlaveMudaheleDetayEkleSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ilce.cs" />
     <Compile Include="IlceEklemeSayfasi.cs">
       <SubType>Form</SubType>
@@ -148,12 +169,25 @@
     <Compile Include="MudaheleEklemeSayfasi.Designer.cs">
       <DependentUpon>MudaheleEklemeSayfasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="MudurPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MudurPage.Designer.cs">
+      <DependentUpon>MudurPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Personel.cs" />
     <Compile Include="PersonelEklemeSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PersonelEklemeSayfasi.Designer.cs">
       <DependentUpon>PersonelEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelProblem.cs" />
+    <Compile Include="PersonelProblemSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelProblemSayfasi.Designer.cs">
+      <DependentUpon>PersonelProblemSayfasi.cs</DependentUpon>
     </Compile>
     <Compile Include="Problem.cs" />
     <Compile Include="ProblemBirim.cs" />
@@ -162,6 +196,27 @@
     </Compile>
     <Compile Include="ProblemBirimEkleSayfasi.Designer.cs">
       <DependentUpon>ProblemBirimEkleSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemCikti.cs" />
+    <Compile Include="ProblemCiktiDegerlendirme.cs" />
+    <Compile Include="ProblemCiktiDegerlendirmeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblemCiktiDegerlendirmeSayfasi.Designer.cs">
+      <DependentUpon>ProblemCiktiDegerlendirmeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemCiktiEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblemCiktiEklemeSayfasi.Designer.cs">
+      <DependentUpon>ProblemCiktiEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemDurumDegerlendirme.cs" />
+    <Compile Include="ProblemDurumDegerlendirmeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblemDurumDegerlendirmeSayfasi.Designer.cs">
+      <DependentUpon>ProblemDurumDegerlendirmeSayfasi.cs</DependentUpon>
     </Compile>
     <Compile Include="ProblemEklemeSayfasi.cs">
       <SubType>Form</SubType>
@@ -174,6 +229,13 @@
     </Compile>
     <Compile Include="ProblemEnterPage.Designer.cs">
       <DependentUpon>ProblemEnterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemMudahele.cs" />
+    <Compile Include="ProblemMudaheleEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblemMudaheleEklemeSayfasi.Designer.cs">
+      <DependentUpon>ProblemMudaheleEklemeSayfasi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -199,6 +261,9 @@
     <EmbeddedResource Include="BirimEklemeSayfasi.resx">
       <DependentUpon>BirimEklemeSayfasi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CalisanProblemSayfasi.resx">
+      <DependentUpon>CalisanProblemSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CiktiDetayEklemeSayfasi.resx">
       <DependentUpon>CiktiDetayEklemeSayfasi.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +272,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IlaveCiktiDetayEklemeSayfasi.resx">
+      <DependentUpon>IlaveCiktiDetayEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IlaveMudaheleDetayEkleSayfasi.resx">
+      <DependentUpon>IlaveMudaheleDetayEkleSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IlceEklemeSayfasi.resx">
       <DependentUpon>IlceEklemeSayfasi.cs</DependentUpon>
@@ -226,17 +297,35 @@
     <EmbeddedResource Include="MudaheleEklemeSayfasi.resx">
       <DependentUpon>MudaheleEklemeSayfasi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MudurPage.resx">
+      <DependentUpon>MudurPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PersonelEklemeSayfasi.resx">
       <DependentUpon>PersonelEklemeSayfasi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PersonelProblemSayfasi.resx">
+      <DependentUpon>PersonelProblemSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProblemBirimEkleSayfasi.resx">
       <DependentUpon>ProblemBirimEkleSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemCiktiDegerlendirmeSayfasi.resx">
+      <DependentUpon>ProblemCiktiDegerlendirmeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemCiktiEklemeSayfasi.resx">
+      <DependentUpon>ProblemCiktiEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemDurumDegerlendirmeSayfasi.resx">
+      <DependentUpon>ProblemDurumDegerlendirmeSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProblemEklemeSayfasi.resx">
       <DependentUpon>ProblemEklemeSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProblemEnterPage.resx">
       <DependentUpon>ProblemEnterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemMudaheleEklemeSayfasi.resx">
+      <DependentUpon>ProblemMudaheleEklemeSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
