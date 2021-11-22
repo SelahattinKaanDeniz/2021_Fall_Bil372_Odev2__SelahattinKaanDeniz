@@ -38,5 +38,5 @@ UstBirimKodu'nda ise ilk eklencek birimin bir UstBirimKodu olamayacağı için o
 Tarih formatını doğru gireceğini varsaydım 
 
 UYGULAMA ÖDEVİ 1 ve 2 VİDEO SUNUMU LİNKİ:
-https://youtu.be/DzZ7hL4zc2M
+https://youtu.be/MXZ6pQs4l0g
 
